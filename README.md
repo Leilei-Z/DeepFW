@@ -25,8 +25,8 @@ Due to the sensitivity of data sourced from firmware or online devices, we provi
 
 ### Data Preparation
 
-1. The dataset is stored in `dataset_demo`, containing feature vectors of embedded web pages from online IoT devices. This includes `version`, `file`, and feature columns, where `version` denotes the firmware version, and `file` denotes the remotely accessible web file name within the firmware.
-2. `data_preparation.py` is responsible for reading the dataset, generating hard mining triplets, and splitting the data into training and testing sets.
+1. The dataset is stored in `dataset_demo`, containing embedded web pages from online IoT devices, from six firmware versions of four manufacturers: D-Link, TP-LINK, Linksys, and Netgear.
+2. The `data_utils.py` file contains some utility functions and classes for data preprocessing and loading. These functionalities are mainly used for processing and preparing text data, especially for using pre-trained word vector models (such as GloVe) and custom datasets.
 ### Model Definition
 
 1. Model definitions are located in the `models` directory. Key files include:
